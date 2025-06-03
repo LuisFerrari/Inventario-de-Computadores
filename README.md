@@ -1,12 +1,12 @@
-# Inventario-de-Computadores# 💻 Sistema de Inventário de TI - Corporativo
+# Inventario-de-Computadores# 
 
 ---
 
-## 📄 Descrição do Projeto
+## Descrição do Projeto
 
 Este é um sistema web simples desenvolvido em PHP e MySQL para gerenciar o inventário de computadores em um ambiente corporativo. Ele permite registrar, visualizar, editar e excluir informações sobre os equipamentos, incluindo dados como nome da máquina, departamento, usuário responsável, datas de manutenção e uma descrição. O sistema também possui um recurso de alerta visual para computadores que estão há mais de 6 meses sem manutenção.
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 * **Listagem de Computadores:** Visualize todos os equipamentos cadastrados em uma tabela organizada.
 * **Cadastro de Novos Equipamentos:** Adicione novos computadores ao inventário com facilidade.
@@ -15,7 +15,7 @@ Este é um sistema web simples desenvolvido em PHP e MySQL para gerenciar o inve
 * **Alerta de Manutenção:** Linhas destacadas na tabela para equipamentos com manutenção pendente (última manutenção há mais de 6 meses).
 * **Funcionalidade de Busca:** Pesquise por máquina, departamento ou usuário para encontrar rapidamente um equipamento.
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * **Backend:** PHP
 * **Banco de Dados:** MySQL
@@ -24,7 +24,7 @@ Este é um sistema web simples desenvolvido em PHP e MySQL para gerenciar o inve
 
 ---
 
-## 🛠️ Como Configurar e Rodar o Projeto
+## Como Configurar e Rodar o Projeto
 
 Siga os passos abaixo para configurar e executar este projeto em seu ambiente local.
 
@@ -70,11 +70,14 @@ CREATE TABLE IF NOT EXISTS computadores (
     data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+
+
 -- Exemplo de inserção de dados (opcional)
 INSERT INTO computadores (nome_maquina, departamento, nome_usuario, ultima_manutencao, proxima_manutencao, descricao) VALUES
 ('CPU-001', 'TI', 'João Silva', '2024-01-15', '2024-07-15', 'Desktop principal do suporte'),
 ('NOTE-005', 'Vendas', 'Maria Santos', '2024-03-20', '2024-09-20', 'Notebook para apresentações'),
 ('SERV-WEB01', 'Infraestrutura', 'Pedro Costa', '2023-10-01', '2024-04-01', 'Servidor web da aplicação interna');
+
 
 ### 3. Configurar a Conexão com o Banco de Dados
 Edite o arquivo php/conexao.php com suas credenciais do banco de dados:
